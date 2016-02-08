@@ -8,13 +8,13 @@ var page = 1;
 var out = "";
 var totalAttention = 0;
 var totalEntries = 0;
-var entries = [[],[]];
+var entries = [];
 var daysAmount = 7;
 var namesarray = [];
 function parse() {
     if (page==1) {
         out = "";
-        entries = [[],[]];
+        entries = [];
         totalAttention = totalEntries = 0;
         daysAmount = document.getElementById("days").value;
         if (daysAmount > 31) {
